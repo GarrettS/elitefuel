@@ -4,57 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EliteFuel » Pre-Workout</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #35424a;
-            padding: 20px;
-            text-align: center;
-            color: #ffffff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        ul {
-            padding: 0;
-            list-style: none;
-        }
-        .product {
-            background: #fff;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .product h2 {
-            margin-top: 0;
-            color: #e8491d;
-        }
-        .supplement-facts {
-            background: #f4f4f4;
-            padding: 15px;
-            margin-top: 15px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/elite-fuel.css">
+    <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
     <header>
@@ -71,31 +22,211 @@
 
     <div class="container">
         <div class="product">
-            <h2>Pre-Workout Formula</h2>
-            <p><strong>Tagline:</strong> Optimized energy, focus, and endurance for peak performance.</p>
-            <p><strong>Price per serving:</strong> $11.05</p>
 
-            <div class="supplement-facts">
-                <h3>Supplement Facts</h3>
-                <ul>
-                    <li>Vinpocetine: 10mg</li>
-                    <li>Noopept: 30mg</li>
-                    <li>Triacetyluridine: 50mg</li>
-                    <li>Pterostilbene: 50mg</li>
-                    <li>NR: 200mg</li>
-                    <li>Tiger Milk Mushroom: 200mg</li>
-                    <li>Ginkgo Biloba: 240mg</li>
-                    <li>Na-r-ALA: 300mg</li>
-                    <li>Alpha-GPC: 600mg</li>
-                    <li>ALCAR (Acetyl-L-Carnitine): 1.5g</li>
-                    <li>Beta-Alanine: 2g</li>
-                    <li>HydroMax Glycerol Powder: 2g</li>
-                    <li>Taurine: 3g</li>
-                    <li>Creatine Monohydrate: 4g</li>
-                    <li>Citrulline Malate: 6g</li>
-                    <li>Organic Berry Blend (including Acai, Blueberry, Elderberry, and Pomegranate): 16g</li>
-                </ul>
-            </div>
+			<h2>Pre-Workout Formula</h2>
+			<p>Cellular energy, mental focus, hydration, and electrolytes for peak performance and endurance.</p>
+			<p><strong>Price per serving:</strong> $11.05</p>
+			
+			<div class="add-ons">
+				<h3>Optional Add-On:</h3>
+				<p><strong>CellCharge:</strong> Add mitochondrial support with the CellCharge blend for an additional $1.75 per serving.</p>
+			</div>
+			<table class="nutrition-facts" id="pre-workout-supplement-facts">
+				<caption class="nutrition-facts-title">Pre-Workout Formula Supplement Facts</caption>
+				<thead>
+					<tr>
+						<th class="serving" colspan="2">Serving Size: About 38 g</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Amount Per Serving</th>
+						<th>%DV</th>
+					</tr>
+					<tr>
+						<td class="line" colspan="2">
+							<div class="label">Calories <div class="weight">~90</div></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Total Carbohydrates <div class="weight">~16 g</div></div>
+						</td>
+						<td>5%</td>
+					</tr>
+					<tr>
+						<td class="indent line">
+							<div class="labellight">Dietary Fiber <div class="weight">~6 g</div></div>
+						</td>
+						<td>21%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Protein <div class="weight">~3 g</div></div>
+						</td>
+						<td>6%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Vitamin C (from Navitas Immunity Blend) <div class="weight">~200 mg</div></div>
+						</td>
+						<td>333%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Niacin (Vitamin B3) <div class="weight">~100 mg</div></div>
+						</td>
+						<td>500%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Sodium <div class="weight">~630 mg</div></div>
+						</td>
+						<td>9%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Potassium <div class="weight">~312 mg</div></div>
+						</td>
+						<td>7%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Magnesium <div class="weight">~120 mg mg</div></div>
+						</td>
+						<td>12%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Calcium <div class="weight">~63 mg</div></div>
+						</td>
+						<td>2%</td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Vinpocetine <div class="weight">10 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Noopept <div class="weight">30 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Triacetyluridine <div class="weight">50 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Pterostilbene <div class="weight">50 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">NR (Nicotinamide Riboside) <div class="weight">200 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Tiger Milk Mushroom <div class="weight">200 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Ginkgo Biloba <div class="weight">240 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Na-r-ALA <div class="weight">300 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Alpha-GPC <div class="weight">600 mg</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">ALCAR (Acetyl-L-Carnitine) <div class="weight">1.5 g</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Beta-Alanine <div class="weight">2 g</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">HydroMax Glycerol Powder <div class="weight">2 g</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Taurine <div class="weight">3 g</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Creatine Monohydrate <div class="weight">4 g</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Citrulline Malate <div class="weight">6 g</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="line">
+							<div class="label">Organic Berry Blend (Acai, Blueberry, Elderberry, Goji, Pomegranate) <div class="weight">16 g</div></div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th class="sub-ingredients">Electrolyte Blend</th>
+					</tr>
+					<tr>
+						<td>Effervescent blend with sodium bicarbonate, potassium bicarbonate, magnesium carbonate, calcium AKG, and potassium chloride.</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- 
+			<div class="electrolyte-blend">
+				<h4>Pre-Workout Electrolytes:</h4>
+				<p>Effervescent blend for hydration and pH balance:</p>
+				<ul>
+					<li>Sodium Bicarbonate: 1/2 tsp</li>
+					<li>Potassium Bicarbonate: 1/4 tsp</li>
+					<li>Magnesium Carbonate: 1/2 tsp</li>
+					<li>Calcium AKG: 1/4 tsp</li>
+					<li>Potassium Chloride: 1/8 tsp</li>
+				</ul>
+			</div>
+			Electrolyte Totals:
+Electrolyte	Amount per Serving
+Sodium (from Sodium Bicarbonate)	629.5 mg
+Potassium (from Potassium Bicarbonate)	312.5 mg
+Magnesium (from Magnesium Bicarbonate)	60 mg
+Potassium (from Potassium Chloride)	62.5 mg
+Calcium (from Calcium AKG)	150 mg
+-->
 
             <h3>Benefits</h3>
             <ul>

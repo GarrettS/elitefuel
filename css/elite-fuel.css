@@ -1,0 +1,53 @@
+:root {
+    --background: #f4f4f9;
+    --text-color: #333;
+    --primary: #e8491d;
+    --header-bg: #35424a;
+    --container-width: 80vw;
+    --font-base: 16px;
+    --border-radius: 0.5vmin;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #1e1e1e;
+        --text-color: #ddd;
+        --primary: #ff5722;
+        --header-bg: #2c3e50;
+        --shadow: rgba(0, 0, 0, 0.4);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: var(--header-bg);
+    padding: 5vh 0;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: var(--primary) 0.3vmin solid;
+}
+
+header > nav > a {
+    color: #FF5722;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
