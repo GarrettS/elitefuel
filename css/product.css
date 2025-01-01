@@ -25,7 +25,8 @@
     background-color: var(--nutrition-facts-background);
     border: 0.1vh solid black; 
     border-width: 0 0.1vh 0.1vh 0.1vh;    
-    padding: 3px; width: 244px;
+    padding: 3px;
+    width: auto;
     font-size: 28px;
     font-family:  Arial, Helvetica, sans-serif;
 }
@@ -41,6 +42,11 @@
     border-collapse: collapse;
     white-space: nowrap;
 }
+
+.nutrition-facts tbody > tr:nth-child(1) > *:is(th, td) { 
+	border-top: 0.6vi solid var(--nutrition-facts-serving-color);
+}
+
 .nutrition-facts tbody th {
 	text-align: left;
 	font-size: 12pt;
@@ -70,7 +76,6 @@
     font-size: 50%;
     text-align: center;
     padding-bottom: 0.25ex;
-	border-bottom: 0.6vi solid var(--nutrition-facts-serving-color);
 }
 
 .nutrition-facts td {
@@ -106,6 +111,10 @@
 
 .nutrition-facts .nutrition-facts-sublabel { 
     font-weight: 500;
+}
+
+.sf-macro {
+	font-weight: 900;
 }
 
 .indent {
@@ -156,4 +165,83 @@
     border-radius: var(--border-radius);
     box-shadow: 0 0 1vmin var(--shadow);
     transition: background-color 0.3s ease, color 0.3s ease;
-}q
+}
+
+/* Product Highlights Styling */
+.ph-product-highlights {
+    font-family: Arial, sans-serif;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.ph-ingredient {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+}
+
+.ph-details {
+    margin: 0.2rem 0 1.5rem 1.5rem;
+    color: #555;
+}
+
+.ph-dosage {
+    font-style: italic;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.ph-benefits {
+    list-style-type: disc;
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 0;
+    color: #444;
+}
+
+.ph-benefits li {
+    margin-bottom: 0.5rem;
+}
+
+/* References */
+
+cite.reflink {
+    font-size: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    cite.reflink {
+        font-size: 75%; /* Slightly larger for mobile readability */
+    }
+    ol.reference-list > li {
+        margin-top: 1.5ex; /* Increase spacing for smaller screens */
+    }
+}
+
+cite.reflink a:hover,
+ol.reference-list a:hover {
+    text-decoration: underline;
+    filter: contrast(150%) saturate(250%);
+
+}
+
+cite.reflink::before {
+    content: "(";
+    padding-right: 0.15vi;
+}
+
+cite.reflink::after {
+    content: ")";
+    padding-left: 0.15vi;
+}
+
+ol.reference-list > li {
+    margin-top: 1ex;
+}
+
+ol.reference-list > li[id]::before {
+    font-size: 60%;
+    font-style: italic;
+    margin: .1em;
+    content: "[" attr(id) "]"
+}
