@@ -3,7 +3,7 @@
     --text-color: #333;
     --primary: #e8491d;
     --header-bg: #35424a;
-    --container-width: 80vw;
+    --main-width: 80vw;
     --font-base: 16px;
     --border-radius: 0.5vmin;
     --shadow: rgba(0, 0, 0, 0.1);
@@ -29,8 +29,8 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.container {
-    width: var(--container-width);
+main {
+    width: var(--main-width);
     margin: 0 auto;
     overflow: hidden;
 }
@@ -66,3 +66,5 @@ a:link, a:visited {
     margin-right: 0;
     width: 110px;
 }
+
+footer { margin: 1vi 2vi }
