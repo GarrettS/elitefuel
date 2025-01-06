@@ -50,7 +50,7 @@
 
 .nutrition-facts tbody th {
 	text-align: left;
-	font-size: 12pt;
+	font-size: 2vi;
     color: var(--nutrition-facts-meta-text);
     padding: 0.5ex 0.5em; 
 }
@@ -61,7 +61,7 @@
 .nutrition-facts td {
 	color: var(--nutrition-facts-color);
     font-weight: 900;
-    font-size: 8pt; 
+    font-size: 1.5vi; 
     padding: 0.5ex 0.5em; 
 }
 .nutrition-facts td.header { 
