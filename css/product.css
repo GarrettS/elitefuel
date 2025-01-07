@@ -27,7 +27,7 @@
     border-width: 0 0.1vh 0.1vh 0.1vh;    
     padding: 3px;
     width: auto;
-    font-size: 28px;
+    font-size: 2.4vi;
     font-family:  Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 }
@@ -50,7 +50,7 @@
 
 .nutrition-facts tbody th {
 	text-align: left;
-	font-size: 2vi;
+	font-size: 1.8vi;
     color: var(--nutrition-facts-meta-text);
     padding: 0.5ex 0.5em; 
 }
@@ -61,7 +61,7 @@
 .nutrition-facts td {
 	color: var(--nutrition-facts-color);
     font-weight: 900;
-    font-size: 1.5vi; 
+    font-size: 1.4vi; 
     padding: 0.5ex 0.5em; 
 }
 .nutrition-facts td.header { 
@@ -171,44 +171,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Product Highlights Styling */
-.ph-product-highlights {
-    font-family: Arial, sans-serif;
-    margin: 1.5rem 0;
-    padding: 0;
-}
-
-.ph-ingredient {
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 0;
-    color: #333;
-}
-
-.ph-details {
-    margin: 0.2rem 0 1.5rem 1.5rem;
-    color: #555;
-}
-
-.ph-dosage {
-    font-style: italic;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.ph-benefits {
-    list-style-type: disc;
-    margin: 0.5rem 0 0 1.5rem;
-    padding: 0;
-    color: #444;
-}
-
-.ph-benefits li {
-    margin-bottom: 0.5rem;
-}
-
 /* References */
-
 cite.reflink {
     font-size: 70%;
 }
