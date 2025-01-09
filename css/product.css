@@ -1,5 +1,4 @@
 :root {
-    --product-background: #DDDD; 
 	--nutrition-facts-background: #FFFD;
 	--nutrition-facts-border-color: #000;
 	--nutrition-facts-even-row-background: #FFFD;
@@ -11,7 +10,6 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-    	--product-background: #222; 
 		--nutrition-facts-background: #777D; 
 		--nutrition-facts-border-color: #777;
 		--nutrition-facts-odd-row-background: #7a7a7aDD;
@@ -149,12 +147,8 @@
 }
 
 .product {
-    background: var(--product-background);
     padding: 2vh;
     margin: 2vh 0;
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 1vmin var(--shadow);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product h2 {

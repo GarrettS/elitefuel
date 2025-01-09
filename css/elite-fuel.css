@@ -1,4 +1,5 @@
 :root {
+    --product-background: #DDDD; 
     --background: #f4f4f9;
     --text-color: #333;
     --primary: #e8491d;
@@ -11,6 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+    	--product-background: #222; 
         --background: #1e1e1e;
         --text-color: #ddd;
         --primary: #ff5722;
@@ -33,6 +35,12 @@ main {
     width: var(--main-width);
     margin: 0 auto;
     overflow: hidden;
+    background: var(--product-background);
+    padding: 2vh;
+    margin-top: 2vh;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 1vmin var(--shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 header {
