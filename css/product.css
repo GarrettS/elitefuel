@@ -206,3 +206,12 @@ ol.reference-list > li[id]::before {
     margin: .1em;
     content: "[" attr(id) "]"
 }
+
+dt { 
+	margin-top: 1ex;
+	margin-bottom: 0.5ex;
+	font-weight: 550;
+}
+dd, dd > ul {
+	margin-top: 0;
+}
