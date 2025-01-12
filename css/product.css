@@ -4,8 +4,9 @@
 	--nutrition-facts-even-row-background: #FFFD;
 	--nutrition-facts-odd-row-background: #E3E3E3DD;
 	--nutrition-facts-color: black; 
-	--nutrition-facts-serving-color: #000D; 
-
+	--nutrition-facts-serving-color: #000D;
+	
+	--benefits-nested-background: #FFF2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,8 +18,12 @@
 		--nutrition-facts-color: #000;
 		--nutrition-facts-meta-text: #D3D3D3DD;
 		--nutrition-facts-serving-color: #090909DD; 
+
+		--benefits-nested-background: #0002;
     }
 }
+
+
 .nutrition-facts { 
     background-color: var(--nutrition-facts-background);
     border: 0.1vh solid black; 
@@ -210,8 +215,20 @@ ol.reference-list > li[id]::before {
 dt { 
 	margin-top: 1ex;
 	margin-bottom: 0.5ex;
-	font-weight: 550;
+	font-weight: 600;
 }
 dd, dd > ul {
 	margin-top: 0;
+}
+
+dd > dl {
+	background: var(--benefits-nested-background);
+	margin: 1ex 0;
+	padding: 1ex 1em;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.05);
+	border-radius: 1vi;
+}
+
+dd > dl > dt {
+	font-weight: 550;
 }
