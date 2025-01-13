@@ -30,7 +30,6 @@
     border-width: 0 0.1vh 0.1vh 0.1vh;    
     padding: 3px;
     width: auto;
-    font-size: 2.4vi;
     font-family:  Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 }
@@ -43,6 +42,7 @@
     border-style: solid;
     padding: 0.4ex;
     font-weight: bold;
+    font-size: calc(12px + 0.8vi);
     border-collapse: collapse;
     white-space: nowrap;
 }
@@ -53,7 +53,7 @@
 
 .nutrition-facts tbody th {
 	text-align: left;
-	font-size: 1.8vi;
+	font-size: calc(10px + 0.8vi);
     color: var(--nutrition-facts-meta-text);
     padding: 0.5ex 0.5em; 
 }
@@ -64,7 +64,7 @@
 .nutrition-facts td {
 	color: var(--nutrition-facts-color);
     font-weight: 900;
-    font-size: 1.4vi; 
+    font-size: calc(8px + 0.6vi);
     padding: 0.5ex 0.5em; 
 }
 .nutrition-facts td.header { 
@@ -78,7 +78,7 @@
 }
 .nutrition-facts .serving { 
     color: var(--nutrition-facts-meta-text);
-    font-size: 50%;
+    font-size: 75%;
     text-align: center;
     padding-bottom: 0.25ex;
 }
