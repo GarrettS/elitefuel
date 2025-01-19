@@ -23,6 +23,11 @@
     }
 }
 
+.product table, .product td, .product th {
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 0.5ex 1ex;
+}
 
 .nutrition-facts { 
     background-color: var(--nutrition-facts-background);
