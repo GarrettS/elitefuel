@@ -7,6 +7,16 @@
 	--nutrition-facts-serving-color: #000D;
 	
 	--benefits-nested-background: #FFF2;
+	
+    /* Pre-workout warm base colors */
+    --neurodrive-pre-background: #FFE0CCDD;  /* Brighter warm peach for neuro */
+    --cellcharge-background: #FFBFA3DD;      /* Deeper coral for cell */
+
+    /* Post-workout cool base colors */
+    --neurofuel-post-background: #CCE0FFDD;  /* Brighter cool blue for neuro */
+    --cellrecharge-background: #A3BFFFDD;    /* Deeper cyan for cell */
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +30,32 @@
 		--nutrition-facts-serving-color: #090909DD; 
 
 		--benefits-nested-background: #0002;
+		
+        /* Pre-workout warm dark colors */
+        --neurodrive-pre-background: #5D3B28DD;  /* Rich dark peach */
+        --cellcharge-background: #803015DD;      /* Deep dark coral */
+
+        /* Post-workout cool dark colors */
+        --neurofuel-post-background: #283B5DDD;  /* Rich dark blue */
+        --cellrecharge-background: #153080DD;    /* Deep dark cyan */
     }
+}
+
+/* ID References */
+#neurodrive-pre {
+    background-color: var(--neurodrive-pre-background);
+}
+
+#cellcharge {
+    background-color: var(--cellcharge-background);
+}
+
+#cellrecharge {
+    background-color: var(--cellrecharge-background);
+}
+
+#neurofuel-post {
+    background-color: var(--neurofuel-post-background);
 }
 
 .product {
