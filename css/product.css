@@ -23,6 +23,10 @@
     }
 }
 
+.product {
+	border-top: 1px solid;
+	padding-top: 1vi;
+}
 .product table, .product td, .product th {
 	border: 1px solid;
 	border-collapse: collapse;
