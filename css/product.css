@@ -6,6 +6,8 @@
 	--nutrition-facts-color: black; 
 	--nutrition-facts-serving-color: #000D;
 	
+	--pronunciation-color: #444;
+
 	--benefits-nested-background: #FFF2;
 	
     /* Pre-workout warm base colors */
@@ -28,6 +30,8 @@
 		--nutrition-facts-color: #000;
 		--nutrition-facts-meta-text: #D3D3D3DD;
 		--nutrition-facts-serving-color: #090909DD; 
+
+		--pronunciation-color: #444;
 
 		--benefits-nested-background: #0002;
 		
@@ -275,4 +279,11 @@ dd > dl {
 
 dd > dl > dt {
 	font-weight: 550;
+}
+
+.pronunciation {
+  font-size: 90%;
+  color: var(--pronunciation-color);  
+  margin: 0 0.05em; 
+  font-style: italic; 
 }
